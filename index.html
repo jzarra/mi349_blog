@@ -1,23 +1,25 @@
-<!doctype html>
-<link rel="stylesheet" href="style.css">
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>mi349 Blog — Home</title>
-  <meta name="description" content="mi349 course blog — project home with posts." />
+  <meta name="description" content="mi349 course blog — project home with posts.">
   <link rel="stylesheet" href="https://unpkg.com/pico.css@latest/css/pico.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="layout">
+
+<div class="layout">
+
   <aside class="sidebar">
     <h3>Sidebar</h3>
     <p>Links, info, etc.</p>
   </aside>
+
   <header class="container">
     <h1>mi349 Blog</h1>
     <p class="lead">Short essays, thoughts, and experiments — by Joey Zarra</p>
-
     <nav>
       <ul>
         <li><a href="index.html" aria-current="page">Home</a></li>
@@ -28,6 +30,7 @@
   </header>
 
   <main class="container">
+
     <section aria-labelledby="latest-posts">
       <h2 id="latest-posts">Latest Posts</h2>
 
@@ -43,7 +46,7 @@
 
         <figure>
           <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&q=60&auto=format&fit=crop"
-               alt="Empty urban street at dawn" />
+               alt="Empty urban street at dawn">
           <figcaption>Empty street in the early morning — space for walking and bikes.</figcaption>
         </figure>
 
@@ -77,7 +80,7 @@
         </p>
       </article>
 
-      <!-- Blog Post 2 (with a table) -->
+      <!-- Blog Post 2 with Table -->
       <article class="card" aria-labelledby="post2-title">
         <header>
           <h3 id="post2-title">A Tiny Guide to Everyday Productivity Tools</h3>
@@ -89,7 +92,7 @@
 
         <figure>
           <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=60&auto=format&fit=crop"
-               alt="Desk with a laptop, notebook and coffee" />
+               alt="Desk with a laptop, notebook and coffee">
           <figcaption>Simple setups often beat complexity — pick tools that stay out of the way.</figcaption>
         </figure>
 
@@ -98,11 +101,6 @@
           can feel like a restriction to someone else. Still, there are broad patterns: short
           routines beat long plans, default templates save decision energy, and consistent
           naming conventions make information retrievable weeks later.
-        </p>
-
-        <p>
-          Below is a small, made-up comparison (table) of common lightweight productivity tools.
-          The goal: highlight which tools win for quick capture, scheduled tasks, and collaborative notes.
         </p>
 
         <table>
@@ -140,37 +138,33 @@
           a single canonical place for each activity — one inbox, one task list, one calendar.
         </p>
 
-        <p>
-          At the end of the day, productivity supports what you value. Use simple tooling to
-          remove friction from the things you want to do, not to create more rules about how
-          to use tools. Try small experiments for two weeks, measure the overhead, and keep
-          the parts that reduce cognitive load.
-        </p>
       </article>
+
+      <!-- Newsletter signup -->
+      <aside>
+        <h2>Newsletter</h2>
+        <p>Sign up to get occasional posts and project updates.</p>
+        <form name="newsletter" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="newsletter">
+
+          <label for="nl-name">Name</label>
+          <input id="nl-name" name="name" type="text" placeholder="Your name">
+
+          <label for="nl-email">Email</label>
+          <input id="nl-email" name="email" type="email" required placeholder="you@example.com">
+
+          <button type="submit">Subscribe</button>
+        </form>
+      </aside>
+
     </section>
 
-    <!-- Newsletter signup -->
-    <aside>
-      <h2>Newsletter</h2>
-      <p>Sign up to get occasional posts and project updates.</p>
-      <form name="newsletter" method="POST" data-netlify="true">
-  <input type="hidden" name="form-name" value="newsletter">
-
-  <label for="nl-name">Name</label>
-  <input id="nl-name" name="name" type="text" placeholder="Your name" />
-
-  <label for="nl-email">Email</label>
-  <input id="nl-email" name="email" type="email" required placeholder="you@example.com" />
-
-  <button type="submit">Subscribe</button>
-</form>
-
-    </aside>
   </main>
-  </div>
-  <footer class="container">
-    <p>&copy; 2025 Joey Zarra — mi349 Blog</p>
-  </footer>
+</div>
+
+<footer class="container">
+  <p>&copy; 2025 Joey Zarra — mi349 Blog</p>
+</footer>
+
 </body>
 </html>
-
