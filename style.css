@@ -126,3 +126,66 @@ th, td {
 th {
   background: #ddd;
 }
+/* ------------------------------ */
+/* RESPONSIVE DESIGN RULES BELOW */
+/* ------------------------------ */
+/* Small phones */
+@media (max-width: 600px) {
+    body {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .two-column,
+    .three-column {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: 2;
+    }
+
+    .content {
+        order: 1;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    form input,
+    form textarea,
+    form select {
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    header nav ul {
+        gap: 20px;
+    }
+
+    .three-column {
+        grid-template-columns: 1fr;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
