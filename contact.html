@@ -26,26 +26,29 @@
       <h2>Contact</h2>
       <p>If you'd like to reach out, use the form below. This is a static demo — the form doesn't submit anywhere by default.</p>
 
-      <form id="contact-form" action="#" method="post" novalidate>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required placeholder="Your name" />
+      <form name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact">
 
-        <label for="email">Email address</label>
-        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" required placeholder="Your name" />
 
-        <label for="reason">Reason for contact</label>
-        <select id="reason" name="reason" required>
-          <option value="">-- Please choose --</option>
-          <option value="saying-hi">Saying hi</option>
-          <option value="contractor">Looking for a contractor</option>
-          <option value="interview">Interested in an interview</option>
-        </select>
+  <label for="email">Email address</label>
+  <input id="email" name="email" type="email" required placeholder="you@example.com" />
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="6" placeholder="Write your message here"></textarea>
+  <label for="reason">Reason for contact</label>
+  <select id="reason" name="reason" required>
+    <option value="">-- Please choose --</option>
+    <option value="saying-hi">Saying hi</option>
+    <option value="contractor">Looking for a contractor</option>
+    <option value="interview">Interested in an interview</option>
+  </select>
 
-        <button type="submit">Submit</button>
-      </form>
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="6" placeholder="Write your message here"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
     </section>
   </main>
 
