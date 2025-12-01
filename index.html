@@ -1,1 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>mi349 Blog — Home</title>
+  <meta name="description" content="mi349 course blog — project home with posts." />
+  <link rel="stylesheet" href="https://unpkg.com/pico.css@latest/css/pico.min.css">
+</head>
+<body>
+  <header class="container">
+    <h1>mi349 Blog</h1>
+    <p class="lead">Short essays, thoughts, and experiments — by Joey Zarra</p>
+
+    <nav>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="latest-posts">
+      <h2 id="latest-posts">Latest Posts</h2>
+
+      <!-- Blog Post 1 -->
+      <article class="card" aria-labelledby="post1-title">
+        <header>
+          <h3 id="post1-title">Quiet Cities: Designing Streets for People</h3>
+          <p>
+            <span>By <address aria-label="author">Joey Zarra</address></span> |
+            <time datetime="2025-11-20">November 20, 2025</time>
+          </p>
+        </header>
+
+        <figure>
+          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1200&q=60&auto=format&fit=crop"
+               alt="Empty urban street at dawn" />
+          <figcaption>Empty street in the early morning — space for walking and bikes.</figcaption>
+        </figure>
+
+        <p>
+          Urban streets are more than vehicle corridors: with careful design they become
+          places for people to meet, shop, and enjoy public life. When planners reduce
+          motor traffic, increase tree cover, and expand sidewalks, the result is often
+          quieter, healthier neighborhoods. Researchers show that lower traffic noise
+          correlates with improved mental well-being and increased local commerce — walkable
+          streets invite lingering, which benefits small businesses and civic life.
+        </p>
+
+        <p>
+          Consider the small interventions: curb extensions (bulb-outs) that shorten
+          crossing distances, raised crosswalks that slow vehicles, and wider sidewalks
+          that host seating and cafes. Each element reduces conflict and makes streets
+          friendlier to pedestrians and cyclists. Another important factor is programming:
+          street markets, pop-up parks, and seasonal lighting transform roads into places
+          people actively choose to spend time. Those temporary uses often become permanent
+          after residents experience the change and local economies adapt.
+        </p>
+
+        <p>
+          A core tension exists between throughput (maximizing vehicle speed) and place
+          quality (making room for people). Solutions that prioritize short trips, transit,
+          and bicycle connectivity can preserve mobility while improving liveability.
+          Cities of all sizes can adopt incremental changes — trial closures, shared
+          streets, or pedestrian days — before committing to permanent reconstruction.
+          Planning for people does not mean removing cars entirely; it means allocating
+          space in ways that reflect local priorities and produce quieter, healthier streets.
+        </p>
+      </article>
+
+      <!-- Blog Post 2 (with a table) -->
+      <article class="card" aria-labelledby="post2-title">
+        <header>
+          <h3 id="post2-title">A Tiny Guide to Everyday Productivity Tools</h3>
+          <p>
+            <span>By <address aria-label="author">Joey Zarra</address></span> |
+            <time datetime="2025-10-02">October 2, 2025</time>
+          </p>
+        </header>
+
+        <figure>
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=1200&q=60&auto=format&fit=crop"
+               alt="Desk with a laptop, notebook and coffee" />
+          <figcaption>Simple setups often beat complexity — pick tools that stay out of the way.</figcaption>
+        </figure>
+
+        <p>
+          Productivity is personal. The same app that turns one person's life into a tidy schedule
+          can feel like a restriction to someone else. Still, there are broad patterns: short
+          routines beat long plans, default templates save decision energy, and consistent
+          naming conventions make information retrievable weeks later.
+        </p>
+
+        <p>
+          Below is a small, made-up comparison (table) of common lightweight productivity tools.
+          The goal: highlight which tools win for quick capture, scheduled tasks, and collaborative notes.
+        </p>
+
+        <table>
+          <caption>Sample comparison of simple productivity tools (fictional ratings)</caption>
+          <thead>
+            <tr>
+              <th>Tool</th>
+              <th>Quick Capture</th>
+              <th>Collaboration</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>NotedIt</td>
+              <td>Excellent</td>
+              <td>Good</td>
+            </tr>
+            <tr>
+              <td>Listly</td>
+              <td>Good</td>
+              <td>Fair</td>
+            </tr>
+            <tr>
+              <td>Boardly</td>
+              <td>Fair</td>
+              <td>Excellent</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          The best approach is a straight line: capture once, process quickly, and schedule the
+          next step. A note app is great for capture; a list app can manage the next action;
+          and a shared board helps when tasks must be coordinated. Resist app bloat by setting
+          a single canonical place for each activity — one inbox, one task list, one calendar.
+        </p>
+
+        <p>
+          At the end of the day, productivity supports what you value. Use simple tooling to
+          remove friction from the things you want to do, not to create more rules about how
+          to use tools. Try small experiments for two weeks, measure the overhead, and keep
+          the parts that reduce cognitive load.
+        </p>
+      </article>
+    </section>
+
+    <!-- Newsletter signup -->
+    <aside>
+      <h2>Newsletter</h2>
+      <p>Sign up to get occasional posts and project updates.</p>
+      <form id="newsletter" action="#" method="post" aria-label="Newsletter signup">
+        <label for="nl-name">Name</label>
+        <input id="nl-name" name="name" type="text" placeholder="Your name" />
+
+        <label for="nl-email">Email</label>
+        <input id="nl-email" name="email" type="email" required placeholder="you@example.com" />
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </aside>
+  </main>
+
+  <footer class="container">
+    <p>&copy; 2025 Joey Zarra — mi349 Blog</p>
+  </footer>
+</body>
+</html>
 
